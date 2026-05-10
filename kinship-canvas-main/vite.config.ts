@@ -11,5 +11,6 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
+    base: process.env.VITE_BASE_PATH || "/kith-and-kin-cafe-website2"
   },
 });
